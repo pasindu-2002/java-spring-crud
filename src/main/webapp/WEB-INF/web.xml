@@ -1,0 +1,35 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+  
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>webmaster@domain.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>phone</param-name>
+        <param-value>+94-041-456321</param-value>
+    </context-param>
+  
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>lk.nibm.edu.ead2.MyServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Pasindu Aluthwaahewa</param-value>
+        </init-param>
+        <init-param>
+            <param-name>email</param-name>
+            <param-value>pasindualuthwaahewa@gmail.com</param-value>
+        </init-param>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+  
+</web-app>
